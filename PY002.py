@@ -12,8 +12,8 @@ df = pd.read_excel(arquivo, sheet_name=aba)
 # Informe aqui os nomes das colunas da sua planilha
 col_ticker = "Ticker"
 col_quantidade = "Qtdade"
-col_preco_compra = "Valor Compra"
-col_preco_venda = "Valor Venda"
+col_preco_compra = "Valor compra"
+col_preco_venda = "Valor venda"
 
 # Calcula o custo total e o valor de venda
 df["CustoTotal"] = df[col_quantidade] * df[col_preco_compra]
