@@ -3,12 +3,15 @@ import pandas as pd
 # Caminho da planilha
 arquivo = r"C:\Users\W Junior\Desktop\Invest\Ações.xlsx"
 
-# Lendo a planilha
-df = pd.read_excel(arquivo)
+# Nome da aba que você quer ler
+aba = "Carteira Clear"
+
+# Lendo a aba específica
+df = pd.read_excel(arquivo, sheet_name=aba)
 
 # Informe aqui os nomes das colunas da sua planilha
 col_ticker = "Ticker"
-col_quantidade = "Qtde"
+col_quantidade = "Qtdade"
 col_preco_compra = "Valor Compra"
 col_preco_venda = "Valor Venda"
 
