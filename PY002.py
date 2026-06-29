@@ -28,3 +28,7 @@ consolidado = df.groupby(col_ticker)[["CustoTotal", "ValorVenda", "Resultado"]].
 # Mostra o resultado
 print("Consolidado de Lucro/Prejuízo:")
 print(consolidado)
+
+# Resultado total da carteira
+resultado_total = consolidado["Resultado"].sum()
+print("\nResultado total da carteira:", resultado_total)
